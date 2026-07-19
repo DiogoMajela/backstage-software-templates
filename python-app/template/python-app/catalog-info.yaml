@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: {{values.env_name}}
-  description: Python app that displays time named {{values.env_name}}
+  name: ${{values.env_name}}
+  description: Python app that displays time named ${{values.env_name}}
   annotations:
-    github.com/project-slug: DiogoMajela/{{values.env_name}}
+    github.com/project-slug: DiogoMajela/${{values.env_name}}
 spec:
   type: service
   owner: development
