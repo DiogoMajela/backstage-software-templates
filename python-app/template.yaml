@@ -36,6 +36,8 @@ spec:
         values:
           app_name: ${{parameters.component_id}}
           app_env: ${{parameters.environment}}
+        copyWithoutRender:
+          - '**/charts/${{values.app_name}}/templates/**'
 
     - id: publish
       name: Publish
