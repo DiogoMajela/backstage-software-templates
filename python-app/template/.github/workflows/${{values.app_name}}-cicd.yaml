@@ -28,8 +28,8 @@ jobs:
         with:
           push: true
           tags: dilopes/${{ values.app_name }}:${{ '${{ env.COMMIT_ID }}' }}
-        outputs:
-          commit_id: ${{ '${{ env.COMMIT_ID }}' }}
+    outputs:
+      commit_id: ${{ '${{ env.COMMIT_ID }}' }}
 
   cd:
     needs: ci
